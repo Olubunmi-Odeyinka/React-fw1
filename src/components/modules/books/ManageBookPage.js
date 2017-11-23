@@ -6,6 +6,8 @@ import * as bookActions from '../../../actions/bookActions';
 import * as genreActions from '../../../actions/genreActions';
 import GeneralForm from '../../common/formCommon/GeneralForm';
 import {genresFormattedForDropdown} from '../../common/selectors/selectors';
+import {validateField, isRequired, minStringLength} from '../../common/validatorCommon/validator';
+import _ from 'underscore';
 import toastr from 'toastr';
 
 export class ManageBookPage extends React.Component {
@@ -22,11 +24,41 @@ export class ManageBookPage extends React.Component {
 
     this.updateBookState = this.updateBookState.bind(this);
     this.saveBook = this.saveBook.bind(this);
-    this.fieldsDefinition = this.fieldsDefinition.bind(this);
+
+    this.fieldsDefinition = {
+      name: {
+        type: 'text',
+        label: 'Name',
+        validation: [
+          {type: isRequired, errorMessage: "Name is required"},
+          {type: minStringLength, minLengthValue: 4, errorMessage:'Name must have a minimum length of 4' }
+        ]
+      },
+      author: {
+        type: 'text',
+        label: 'Author',
+        validation:[
+          {type:isRequired}
+        ]
+      },
+      category: {
+        type: 'select',
+        label: 'Category',
+        defaultOption: null,
+        validation: [
+          {type:isRequired}
+        ]
+      },
+      page: {
+        type: 'number',
+        label: 'Book\'s Pages'
+      }
+    };
   }
 
   componentDidMount(){
     this.props.lookUpsAction.loadGenres();
+    this.name.focus();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -38,49 +70,24 @@ export class ManageBookPage extends React.Component {
 
   updateBookState(event) {
     const field = event.target.name;
-    let book = this.state.book;
-    book[field] = event.target.value;
+    const book = this.state.book;
+    const value = event.target.value;
+
+    book[field] = validateField(field, value, this);
+
+    book[field] = value;
     return this.setState({book: book});
-  }
-
-  fieldsDefinition(){
-    return {
-      name: {
-        type: 'text',
-        label: 'Name'
-      },
-      author: {
-        type: 'text',
-        label: 'Author'
-      },
-      category: {
-        type: 'select',
-        label: 'Category',
-        defaultOption: null,
-        cascade: {
-          dependent: 'country',
-          reloadfunction: function(){
-
-          }
-        }
-      },
-      page: {
-        type: 'number',
-        label: 'Book\'s Pages'
-      }
-    };
   }
 
   bookFormIsValid() {
     let formIsValid = true;
-    let errors = {};
 
-    if (this.state.book.name.length < 5) {
-      errors.name = 'Name must be at least 5 characters.';
-      formIsValid = false;
-    }
+    _.map(this.fieldsDefinition, (val)=> {
+      if(val['isValid']!== undefined){
+        formIsValid = (formIsValid && val['isValid']);
+      }
+    });
 
-    this.setState({errors: errors});
     return formIsValid;
   }
 
@@ -115,7 +122,7 @@ export class ManageBookPage extends React.Component {
         formHeader={this.state.formHeader}
         lookUps={{'category':this.props.genres}}
         onChange={this.updateBookState}
-        fields={this.fieldsDefinition()}
+        fields={this.fieldsDefinition}
         onSave={this.saveBook}
         formModule={this.state.book}
         errors={this.state.errors}
