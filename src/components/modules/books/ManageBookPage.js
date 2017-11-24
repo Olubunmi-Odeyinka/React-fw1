@@ -58,13 +58,13 @@ export class ManageBookPage extends React.Component {
 
   componentDidMount(){
     this.props.lookUpsAction.loadGenres();
-    this.name.focus();
+    //this.name.focus();
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.book.id != nextProps.book.id) {
       // Necessary to populate form when existing book is loaded directly.
-      this.setState({book: Object.assign({}, nextProps.book)});
+      this.setState(() => ({book: Object.assign({}, nextProps.book)}));
     }
   }
 
@@ -76,7 +76,7 @@ export class ManageBookPage extends React.Component {
     book[field] = validateField(field, value, this);
 
     book[field] = value;
-    return this.setState({book: book});
+    return this.setState(() => ({book: book}));
   }
 
   bookFormIsValid() {
@@ -99,18 +99,18 @@ export class ManageBookPage extends React.Component {
       return;
     }
 
-    this.setState({saving: true});
+    this.setState(() => ({saving: true}));
 
     this.props.actions.saveBook(this.state.book)
       .then(() => this.redirect())
       .catch(error => {
         toastr.error(error);
-        this.setState({saving: false});
+        this.setState(() => (() => ({saving: false})));
       });
   }
 
   redirect() {
-    this.setState({saving: false});
+    this.setState(() => ({saving: false}));
     toastr.success('Book saved');
     this.props.history.push('/books');
     //Or this.context.router.history.push('/books');

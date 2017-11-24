@@ -1,13 +1,13 @@
-/* eslint-disable no-var */
-var rimraf = require('rimraf');
-var chalk = require('chalk');
-var replace = require("replace");
-var prompt = require("prompt");
-var prompts = require('./setupPrompts');
 
-var chalkSuccess = chalk.green;
-var chalkProcessing = chalk.blue;
-var chalkWarn = chalk.red;
+const rimraf = require('rimraf');
+const chalk = require('chalk');
+const replace = require("replace");
+const prompt = require("prompt");
+const prompts = require('./setupPrompts');
+
+const chalkSuccess = chalk.green;
+const chalkProcessing = chalk.blue;
+const chalkWarn = chalk.red;
 
 /* eslint-disable no-console */
 
@@ -17,7 +17,7 @@ prompt.start();
 
 console.log(chalkWarn("WARNING:  Preparing to delete local git repository..."));
 prompt.get([{name: 'deleteGit', description: "Delete the git repository?  [Y/n]"}], function(err, result) {
-  var deleteGit = result.deleteGit.toUpperCase();
+  const deleteGit = result.deleteGit.toUpperCase();
 
   if (err) {
     process.exit(1);

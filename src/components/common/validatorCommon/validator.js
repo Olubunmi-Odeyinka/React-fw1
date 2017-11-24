@@ -2,8 +2,8 @@
 * Validator function
 * */
 export function validateField(field, value, thisPage) {
-  var fieldDef = thisPage.fieldsDefinition[field];
-  var fieldValidatorParam = fieldDef.validation;
+  const fieldDef = thisPage.fieldsDefinition[field];
+  const fieldValidatorParam = fieldDef.validation;
   console.log(document.activeElement);
   if (fieldValidatorParam) {
     if (fieldValidatorParam.length > 0) {
