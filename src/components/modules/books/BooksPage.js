@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as bookActions from '../../../actions/bookActions';
-import ListView from "../../common/tableCommon/ListView";
+import ListView from "../../common/table/ListView";
 
 class BooksPage extends React.Component {
   constructor(props, context) {

@@ -4,9 +4,9 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as bookActions from '../../../actions/bookActions';
 import * as genreActions from '../../../actions/genreActions';
-import GeneralForm from '../../common/formCommon/GeneralForm';
+import GeneralForm from '../../common/form/GeneralForm';
 import {genresFormattedForDropdown} from '../../common/selectors/selectors';
-import {validateField, isRequired, minStringLength} from '../../common/validatorCommon/validator';
+import {validateField, isRequired, minStringLength} from '../../common/validator/validator';
 import _ from 'underscore';
 import toastr from 'toastr';
 
@@ -44,6 +44,7 @@ export class ManageBookPage extends React.Component {
       category: {
         type: 'select',
         label: 'Category',
+        focus: true,
         defaultOption: null,
         validation: [
           {type:isRequired}

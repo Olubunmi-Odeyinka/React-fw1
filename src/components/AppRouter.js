@@ -5,8 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 import NextPage from './NextPage';
 import NotFoundPage from './NotFoundPage';
-import Header from './common/pageCommon/Header';
-import Footer from './common/pageCommon/Footer';
+import Header from './common/page/Header';
+import Footer from './common/page/Footer';
 import booksPage from "./modules/books/booksPage";
 import ManageBookPage from "./modules/books/ManageBookPage";
 

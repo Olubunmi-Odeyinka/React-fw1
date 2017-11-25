@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TextInput from './inputCommon/TextInput';
-import SelectInput from './inputCommon/SelectInput';
+import TextInput from './input/TextInput';
+import SelectInput from './input/SelectInput';
 import _ from  'lodash';
 
 export default class GeneralForm extends React.Component {
@@ -24,8 +24,9 @@ export default class GeneralForm extends React.Component {
             value={this.props.formModule[field]}
             onChange={this.props.onChange}
             error={this.props.errors[field] || null}
-            defaultOption={this.props.fields[field].defaultOption || null}
-            options={this.props.lookUps[field] || null} />
+            defaultOption={fieldConfig.defaultOption || null}
+            options={this.props.lookUps[field] || null}
+            focus={fieldConfig.focus}/>
         );
       default:
         return (
@@ -36,7 +37,8 @@ export default class GeneralForm extends React.Component {
             label={fieldConfig.label}
             value={this.props.formModule[field]}
             onChange={this.props.onChange}
-            error={this.props.errors[field] || null} />
+            error={this.props.errors[field] || null}
+            focus={fieldConfig.focus}/>
         );
     }
   }
