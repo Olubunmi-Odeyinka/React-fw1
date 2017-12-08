@@ -1,4 +1,5 @@
 import delay from './delay';
+import _ from 'underscore';
 
 // This file mocks a web API by working with the hard-coded data below.
 // It uses setTimeout to simulate the delay of an AJAX call.
@@ -78,14 +79,24 @@ class BookApi {
     });
   }
 
+  static getBookById(id) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        let book = _.where(books, {id: parseInt(id)});
+        resolve(book[0]);
+      }, delay);
+    });
+  }
+
   static deleteBook(id) {
     return new Promise((resolve) => {
       setTimeout(() => {
         const indexOfBookToDelete = books.findIndex(book => {
           book.id === id;
         });
+        let deletedBook = books[indexOfBookToDelete];
         books.splice(indexOfBookToDelete, 1);
-        resolve();
+        resolve(Object.assign({}, deletedBook));
       }, delay);
     });
   }

@@ -7,7 +7,7 @@ import NextPage from './NextPage';
 import NotFoundPage from './NotFoundPage';
 import Header from './common/page/Header';
 import Footer from './common/page/Footer';
-import booksPage from "./modules/books/booksPage";
+import booksPage from "./modules/books/BooksPage";
 import ManageBookPage from "./modules/books/ManageBookPage";
 
 
@@ -27,10 +27,7 @@ class AppRouter extends React.Component {
             <Route exact={true} path="/" component={HomePage} />
             <Route path="/next" component={NextPage} />
             <Route path="/books" component={booksPage} />
-            <Route path="/book/create" component={ManageBookPage} />
-            <Route path="/book/detail/:id" component={ManageBookPage} />
-            <Route path="/book/edit/:id" component={ManageBookPage} />
-            <Route path="/book/delete/:id" component={ManageBookPage} />
+            <Route path="/book/:operator/:id?" component={ManageBookPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

@@ -6,10 +6,8 @@ import * as bookActions from '../../../actions/bookActions';
 import ListView from "../../common/table/ListView";
 
 class BooksPage extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-    this.redirectToAddBookPage = this.redirectToAddBookPage.bind(this);
-    this.fieldsDefinition = {
+
+   fieldsDefinition = {
       name: {
       },
       author: {
@@ -21,21 +19,20 @@ class BooksPage extends React.Component {
         type: 'number'
       }
     };
-  }
 
-  componentDidMount(){
+  componentDidMount =()=>{
     this.props.actions.loadBooks();
   }
 
-  bookRow(book, index) {
+  bookRow=(book, index)=> {
     return <div key={index}>{book.title}</div>;
   }
 
-  redirectToAddBookPage() {
+  redirectToAddBookPage=()=> {
     this.props.history.push('/book/create');
   }
 
-  render() {
+  render=()=> {
     const {books} = this.props;
 
     return (
