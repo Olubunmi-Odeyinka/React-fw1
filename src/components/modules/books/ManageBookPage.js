@@ -21,8 +21,7 @@ export class ManageBookPage extends React.Component {
     urlOpeartion: '',
     listUrl:'/books',
     showSavingButton: true,
-    savingString:['saving', 'save', 'btn-sucesss']
-    // lookUps: {}
+    savingString:['saving', 'save', 'btn-success']
   };
 
     fieldsDefinition = {
