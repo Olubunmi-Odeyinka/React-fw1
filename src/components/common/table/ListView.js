@@ -9,7 +9,7 @@ const ItemList = ({listItems, fieldsDefinition}) => {
         <thead>
 
         <tr>
-          {/*<th>&nbsp;</th>*/}
+          <th>&nbsp;</th>
           {_.map(fieldsDefinition, (val, key)=> <th key={key}>{key.toUpperCase()}</th> )}
         </tr>
         </thead>

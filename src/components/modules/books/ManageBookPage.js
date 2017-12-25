@@ -17,7 +17,8 @@ export class ManageBookPage extends React.Component {
 
   state = {
     formHeader: "Manage Books",
-    formFieldReadOnly: false
+    formFieldReadOnly: false,
+    urlOpeartion: ''
     // lookUps: {}
   };
 
@@ -45,14 +46,27 @@ export class ManageBookPage extends React.Component {
       if (this.props.match.params.id) {
         this.props.actions.getBookById(this.props.match.params.id);
       }
+
       if (this.props.match.params.operator) {
 
+        this.setState(() => ({urlOpeartion : this.props.match.params.operator}));
         switch(this.props.match.params.operator){
+          case operation.View_URL_String:
+            this.setState(() => ({formFieldReadOnly : true}));
+            this.setState(() => ({formHeader : "View Book"}));
+
+            break;
+          case operation.Create_URL_String:
+            this.setState(() => ({formHeader : "Create Book"}));
+            break;
+          case operation.Modify_URL_String:
+            this.setState(() => ({formHeader : "Modify Book"}));
+            break;
           case operation.Delete_URL_String:
+            this.setState(() => ({formHeader : "Delete Book"}));
             this.setState(() => ({formFieldReadOnly : true}));
             break;
           default:
-
             break;
         }
       }
@@ -85,16 +99,27 @@ export class ManageBookPage extends React.Component {
             readOnly={this.state.formFieldReadOnly}
         />
     );
+   theReadonlyForm = withFormik({
+     mapPropsToValues({book}){
+       return{
+         id: book.id,
+         name: book.name,
+         author: book.author,
+         category: book.category,
+         page: book.page
+       }
+     },
+     enableReinitialize: true
+   })(this.FormDom);
 
-   FormikForm = withFormik({
+   theEditableForm = withFormik({
         mapPropsToValues({book}){
             return{
                 id: book.id || uuid(),
                 name: book.name || 'Baba Ode',
                 author: book.author || '',
                 category: book.category || 4,
-                page: book.page || '',
-                __operationType__: book.__operationType__
+                page: book.page || ''
             }
         },
         validationSchema: Yup.object().shape({
@@ -105,7 +130,7 @@ export class ManageBookPage extends React.Component {
             bag.setSubmitting(true);
             let subMissionPromise = null;
             let successMessage = null;
-            switch(values.__operationType__){
+            switch(bag.props.values.urlOpeartion){
               case operation.Create_URL_String:
                 subMissionPromise = bag.props.formAction.saveNewBook(values);
                 successMessage = 'Book created';
@@ -135,11 +160,18 @@ export class ManageBookPage extends React.Component {
     })(this.FormDom)
 
     render =()=> {
-        return (
-            <this.FormikForm book={this.props.book}
-                             formAction={this.props.actions}
-                             redirect={this.redirect}
-                              />
+        return this.state.formFieldReadOnly ? (
+          <this.theReadonlyForm
+            book={this.props.book}
+            redirect={this.redirect}
+          />
+        ): (
+          <this.theEditableForm
+            book={this.props.book}
+            formAction={this.props.actions}
+            urlOpeartion={this.state.urlOpeartion}
+            redirect={this.redirect}
+          />
         );
     }
 }
