@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import _ from 'underscore';
 import ListViewRow from './ListViewRow';
 
+
 const ItemList = ({listItems, fieldsDefinition}) => {
   return (
       <table className="table">

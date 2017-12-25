@@ -18,7 +18,10 @@ export class ManageBookPage extends React.Component {
   state = {
     formHeader: "Manage Books",
     formFieldReadOnly: false,
-    urlOpeartion: ''
+    urlOpeartion: '',
+    listUrl:'/books',
+    showSavingButton: true,
+    savingString:['saving', 'save', 'btn-sucesss']
     // lookUps: {}
   };
 
@@ -45,26 +48,37 @@ export class ManageBookPage extends React.Component {
     componentDidMount =() =>{
       if (this.props.match.params.id) {
         this.props.actions.getBookById(this.props.match.params.id);
+      }else{
+        this.props.actions.loadBookSuccess({
+          id: uuid(),
+          name: 'Dada Ole',
+          author: '',
+          category: 4,
+          page: ''
+        });
       }
 
       if (this.props.match.params.operator) {
 
         this.setState(() => ({urlOpeartion : this.props.match.params.operator}));
+
         switch(this.props.match.params.operator){
           case operation.View_URL_String:
             this.setState(() => ({formFieldReadOnly : true}));
             this.setState(() => ({formHeader : "View Book"}));
-
+            this.setState(() => ({showSavingButton : false}));
             break;
           case operation.Create_URL_String:
             this.setState(() => ({formHeader : "Create Book"}));
             break;
           case operation.Modify_URL_String:
             this.setState(() => ({formHeader : "Modify Book"}));
+            this.setState(() => ({savingString : ['Updating', 'Update', 'btn-info']}));
             break;
           case operation.Delete_URL_String:
             this.setState(() => ({formHeader : "Delete Book"}));
             this.setState(() => ({formFieldReadOnly : true}));
+            this.setState(() => ({savingString : ['Deleting', 'Delete', 'btn-danger']}));
             break;
           default:
             break;
@@ -87,16 +101,13 @@ export class ManageBookPage extends React.Component {
                 isSubmitting
             })=>(
         <GeneralForm
-            formHeader={this.state.formHeader}
+            formState={{...this.state}}
             lookUps={{'category':this.props.genres}}
             touched={touched}
             fields={this.fieldsDefinition}
             values={values}
-            // onSave={this.saveBook}
-            // formModule={this.state.book}
             errors={errors}
             saving={isSubmitting}
-            readOnly={this.state.formFieldReadOnly}
         />
     );
    theReadonlyForm = withFormik({
@@ -115,11 +126,11 @@ export class ManageBookPage extends React.Component {
    theEditableForm = withFormik({
         mapPropsToValues({book}){
             return{
-                id: book.id || uuid(),
-                name: book.name || 'Baba Ode',
-                author: book.author || '',
-                category: book.category || 4,
-                page: book.page || ''
+                id: book.id,
+                name: book.name,
+                author: book.author,
+                category: book.category,
+                page: book.page
             }
         },
         validationSchema: Yup.object().shape({
@@ -130,7 +141,7 @@ export class ManageBookPage extends React.Component {
             bag.setSubmitting(true);
             let subMissionPromise = null;
             let successMessage = null;
-            switch(bag.props.values.urlOpeartion){
+            switch(bag.props.urlOpeartion){
               case operation.Create_URL_String:
                 subMissionPromise = bag.props.formAction.saveNewBook(values);
                 successMessage = 'Book created';
