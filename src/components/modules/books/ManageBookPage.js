@@ -104,7 +104,7 @@ export class ManageBookPage extends React.Component {
             lookUps={{'category':this.props.genres}}
             touched={touched}
             fields={this.fieldsDefinition}
-            values={values}
+            //values={values}
             errors={errors}
             saving={isSubmitting}
         />
@@ -189,6 +189,7 @@ export class ManageBookPage extends React.Component {
 ManageBookPage.propTypes = {
     book: PropTypes.object.isRequired,
     genres: PropTypes.array.isRequired,
+    lookUpsAction: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired
 };
 

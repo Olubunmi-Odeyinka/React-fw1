@@ -1,0 +1,598 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`b 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GeneralForm
+    errors={Object {}}
+    fields={
+        Object {
+            "author": Object {
+              "focus": true,
+              "label": "Author",
+              "type": "text",
+            },
+            "category": Object {
+              "label": "Category",
+              "type": "select",
+            },
+            "name": Object {
+              "label": "Name",
+              "type": "text",
+            },
+            "page": Object {
+              "label": "Book's Pages",
+              "type": "number",
+            },
+          }
+    }
+    formState={
+        Object {
+            "formFieldReadOnly": false,
+            "formHeader": "Manage Books",
+            "listUrl": "/books",
+            "savingString": Array [
+              "saving",
+              "save",
+              "btn-success",
+            ],
+            "showSavingButton": true,
+            "urlOpeartion": "",
+          }
+    }
+    lookUps={Object {}}
+    onSave={true}
+    saving={false}
+    touched={Object {}}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+>
+          <h1>
+                    Manage Books
+          </h1>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="btn btn-default pull-right"
+                    to="/books"
+          >
+                    Back to List
+          </NavLink>
+</div>,
+        <Form>
+          <TextInput
+                    error={null}
+                    focus={undefined}
+                    label="Name"
+                    name="name"
+                    readOnly={false}
+                    touched={null}
+                    type="text"
+          />
+          <TextInput
+                    error={null}
+                    focus={true}
+                    label="Author"
+                    name="author"
+                    readOnly={false}
+                    touched={null}
+                    type="text"
+          />
+          <SelectInput
+                    error={null}
+                    focus={undefined}
+                    label="Category"
+                    name="category"
+                    options={null}
+                    readOnly={false}
+                    touched={null}
+          />
+          <TextInput
+                    error={null}
+                    focus={undefined}
+                    label="Book's Pages"
+                    name="page"
+                    readOnly={false}
+                    touched={null}
+                    type="number"
+          />
+          <input
+                    className="btn btn-success"
+                    disabled={false}
+                    onClick={true}
+                    type="submit"
+                    value="save"
+          />
+</Form>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Manage Books
+</h1>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="btn btn-default pull-right"
+              to="/books"
+>
+              Back to List
+</NavLink>,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Manage Books",
+            },
+            "ref": null,
+            "rendered": "Manage Books",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Back to List",
+              "className": "btn btn-default pull-right",
+              "to": "/books",
+            },
+            "ref": null,
+            "rendered": "Back to List",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            Array [
+              <TextInput
+                error={null}
+                focus={undefined}
+                label="Name"
+                name="name"
+                readOnly={false}
+                touched={null}
+                type="text"
+/>,
+              <TextInput
+                error={null}
+                focus={true}
+                label="Author"
+                name="author"
+                readOnly={false}
+                touched={null}
+                type="text"
+/>,
+              <SelectInput
+                error={null}
+                focus={undefined}
+                label="Category"
+                name="category"
+                options={null}
+                readOnly={false}
+                touched={null}
+/>,
+              <TextInput
+                error={null}
+                focus={undefined}
+                label="Book's Pages"
+                name="page"
+                readOnly={false}
+                touched={null}
+                type="number"
+/>,
+            ],
+            <input
+              className="btn btn-success"
+              disabled={false}
+              onClick={true}
+              type="submit"
+              value="save"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "name",
+            "nodeType": "function",
+            "props": Object {
+              "error": null,
+              "focus": undefined,
+              "label": "Name",
+              "name": "name",
+              "readOnly": false,
+              "touched": null,
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "author",
+            "nodeType": "function",
+            "props": Object {
+              "error": null,
+              "focus": true,
+              "label": "Author",
+              "name": "author",
+              "readOnly": false,
+              "touched": null,
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "category",
+            "nodeType": "function",
+            "props": Object {
+              "error": null,
+              "focus": undefined,
+              "label": "Category",
+              "name": "category",
+              "options": null,
+              "readOnly": false,
+              "touched": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "page",
+            "nodeType": "function",
+            "props": Object {
+              "error": null,
+              "focus": undefined,
+              "label": "Book's Pages",
+              "name": "page",
+              "readOnly": false,
+              "touched": null,
+              "type": "number",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "btn btn-success",
+              "disabled": false,
+              "onClick": true,
+              "type": "submit",
+              "value": "save",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+>
+            <h1>
+                        Manage Books
+            </h1>
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="btn btn-default pull-right"
+                        to="/books"
+            >
+                        Back to List
+            </NavLink>
+</div>,
+          <Form>
+            <TextInput
+                        error={null}
+                        focus={undefined}
+                        label="Name"
+                        name="name"
+                        readOnly={false}
+                        touched={null}
+                        type="text"
+            />
+            <TextInput
+                        error={null}
+                        focus={true}
+                        label="Author"
+                        name="author"
+                        readOnly={false}
+                        touched={null}
+                        type="text"
+            />
+            <SelectInput
+                        error={null}
+                        focus={undefined}
+                        label="Category"
+                        name="category"
+                        options={null}
+                        readOnly={false}
+                        touched={null}
+            />
+            <TextInput
+                        error={null}
+                        focus={undefined}
+                        label="Book's Pages"
+                        name="page"
+                        readOnly={false}
+                        touched={null}
+                        type="number"
+            />
+            <input
+                        className="btn btn-success"
+                        disabled={false}
+                        onClick={true}
+                        type="submit"
+                        value="save"
+            />
+</Form>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Manage Books
+</h1>,
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="btn btn-default pull-right"
+                to="/books"
+>
+                Back to List
+</NavLink>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Manage Books",
+              },
+              "ref": null,
+              "rendered": "Manage Books",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Back to List",
+                "className": "btn btn-default pull-right",
+                "to": "/books",
+              },
+              "ref": null,
+              "rendered": "Back to List",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              Array [
+                <TextInput
+                  error={null}
+                  focus={undefined}
+                  label="Name"
+                  name="name"
+                  readOnly={false}
+                  touched={null}
+                  type="text"
+/>,
+                <TextInput
+                  error={null}
+                  focus={true}
+                  label="Author"
+                  name="author"
+                  readOnly={false}
+                  touched={null}
+                  type="text"
+/>,
+                <SelectInput
+                  error={null}
+                  focus={undefined}
+                  label="Category"
+                  name="category"
+                  options={null}
+                  readOnly={false}
+                  touched={null}
+/>,
+                <TextInput
+                  error={null}
+                  focus={undefined}
+                  label="Book's Pages"
+                  name="page"
+                  readOnly={false}
+                  touched={null}
+                  type="number"
+/>,
+              ],
+              <input
+                className="btn btn-success"
+                disabled={false}
+                onClick={true}
+                type="submit"
+                value="save"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "name",
+              "nodeType": "function",
+              "props": Object {
+                "error": null,
+                "focus": undefined,
+                "label": "Name",
+                "name": "name",
+                "readOnly": false,
+                "touched": null,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "author",
+              "nodeType": "function",
+              "props": Object {
+                "error": null,
+                "focus": true,
+                "label": "Author",
+                "name": "author",
+                "readOnly": false,
+                "touched": null,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "category",
+              "nodeType": "function",
+              "props": Object {
+                "error": null,
+                "focus": undefined,
+                "label": "Category",
+                "name": "category",
+                "options": null,
+                "readOnly": false,
+                "touched": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "page",
+              "nodeType": "function",
+              "props": Object {
+                "error": null,
+                "focus": undefined,
+                "label": "Book's Pages",
+                "name": "page",
+                "readOnly": false,
+                "touched": null,
+                "type": "number",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "btn btn-success",
+                "disabled": false,
+                "onClick": true,
+                "type": "submit",
+                "value": "save",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

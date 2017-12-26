@@ -7,17 +7,20 @@ import genres from '../../../fixtures/genres';
 
 let props, wrapper;
 beforeEach(() => {
+
   props = {
     book: books[0],
     genres,
-    actions:{},
-    match: {params: {operator: operation.Modify_URL_String}},
-    match: {params: {id: books[0].id}}
+    actions:{getBookById: jest.fn()},
+    lookUpsAction:{loadGenres: jest.fn()},
+    match: {params: {
+      operator: operation.Modify_URL_String,
+      id: books[0].id
+    }}
   };
-
 });
 
 test('Should render Books edit view', ()=>{
-  wrapper = <ManageBookPage {...props}/>;
+  wrapper = shallow(<ManageBookPage {...props}/>);
   expect(wrapper).toMatchSnapshot();
 });

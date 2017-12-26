@@ -1,51 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render Books edit view 1`] = `
-<ManageBookPage
-  actions={Object {}}
-  books={
-    Array [
-      Object {
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ManageBookPage
+    actions={
+        Object {
+            "getBookById": [Function],
+          }
+    }
+    book={
+        Object {
+            "author": "Russia Ban",
+            "category": 3,
+            "id": 1,
+            "name": "The Syberia Story",
+            "page": 456,
+          }
+    }
+    genres={
+        Array [
+            Object {
+              "description": "That is an example",
+              "id": 1,
+              "name": "Rare Screen",
+            },
+            Object {
+              "description": "5 The rate",
+              "id": 2,
+              "name": "Satire",
+            },
+            Object {
+              "description": "This is new",
+              "id": 3,
+              "name": "Chain Taste",
+            },
+          ]
+    }
+    lookUpsAction={
+        Object {
+            "loadGenres": [Function],
+          }
+    }
+    match={
+        Object {
+            "params": Object {
+              "id": 1,
+              "operator": "modify",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "book": Object {
         "author": "Russia Ban",
         "category": 3,
         "id": 1,
         "name": "The Syberia Story",
         "page": 456,
       },
-      Object {
-        "author": "Pact Sun",
-        "category": 1,
-        "id": 2,
-        "name": "The Wolf Report",
-        "page": 375,
+      "formAction": Object {
+        "getBookById": [Function],
       },
-      Object {
-        "author": "Brian Tracy",
-        "category": 5,
-        "id": 3,
-        "name": "The Mayor of 3rd",
-        "page": 590,
+      "redirect": [Function],
+      "urlOpeartion": "modify",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "book": Object {
+          "author": "Russia Ban",
+          "category": 3,
+          "id": 1,
+          "name": "The Syberia Story",
+          "page": 456,
+        },
+        "formAction": Object {
+          "getBookById": [Function],
+        },
+        "redirect": [Function],
+        "urlOpeartion": "modify",
       },
-    ]
-  }
-  genres={
-    Array [
-      Object {
-        "description": "That is an example",
-        "id": 1,
-        "name": "Rare Screen",
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
       },
-      Object {
-        "description": "5 The rate",
-        "id": 2,
-        "name": "Satire",
-      },
-      Object {
-        "description": "This is new",
-        "id": 3,
-        "name": "Chain Taste",
-      },
-    ]
-  }
-/>
+    },
+  },
+}
 `;

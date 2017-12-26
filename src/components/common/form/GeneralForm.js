@@ -68,15 +68,14 @@ export default class GeneralForm extends React.Component {
 }
 
 
-// GeneralForm.propTypes = {
-//   formHeader: PropTypes.string.isRequired,
-//   formModule: PropTypes.object.isRequired,
-//   fields: PropTypes.object.isRequired,
-//   lookUps: PropTypes.object,
-//   onSave: PropTypes.func.isRequired,
-//   onChange: PropTypes.func.isRequired,
-//   saving: PropTypes.bool,
-//   errors: PropTypes.object
-// };
+GeneralForm.propTypes = {
+  errors: PropTypes.object,
+  fields: PropTypes.object,
+  touched: PropTypes.object,
+  lookUps: PropTypes.object,
+  formState: PropTypes.object,
+  saving: PropTypes.bool,
+  onSave: PropTypes.bool
+};
 
 //export default GeneralForm;
