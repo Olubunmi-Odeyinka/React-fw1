@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Books edit view 1`] = `
+<ManageBookPage
+  actions={Object {}}
+  books={
+    Array [
+      Object {
+        "author": "Russia Ban",
+        "category": 3,
+        "id": 1,
+        "name": "The Syberia Story",
+        "page": 456,
+      },
+      Object {
+        "author": "Pact Sun",
+        "category": 1,
+        "id": 2,
+        "name": "The Wolf Report",
+        "page": 375,
+      },
+      Object {
+        "author": "Brian Tracy",
+        "category": 5,
+        "id": 3,
+        "name": "The Mayor of 3rd",
+        "page": 590,
+      },
+    ]
+  }
+  genres={
+    Array [
+      Object {
+        "description": "That is an example",
+        "id": 1,
+        "name": "Rare Screen",
+      },
+      Object {
+        "description": "5 The rate",
+        "id": 2,
+        "name": "Satire",
+      },
+      Object {
+        "description": "This is new",
+        "id": 3,
+        "name": "Chain Taste",
+      },
+    ]
+  }
+/>
+`;

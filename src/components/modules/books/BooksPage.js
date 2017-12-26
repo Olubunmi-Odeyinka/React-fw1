@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as bookActions from '../../../actions/bookActions';
 import ListView from "../../common/table/ListView";
 
-class BooksPage extends React.Component {
+export class BooksPage extends React.Component {
 
    fieldsDefinition = {
       name: {

@@ -1,0 +1,553 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render BooksPage with empty books 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BooksPage
+    actions={
+        Object {
+            "loadBooks": [Function],
+          }
+    }
+    books={Array []}
+    genres={
+        Array [
+            Object {
+              "description": "That is an example",
+              "id": 1,
+              "name": "Rare Screen",
+            },
+            Object {
+              "description": "5 The rate",
+              "id": 2,
+              "name": "Satire",
+            },
+            Object {
+              "description": "This is new",
+              "id": 3,
+              "name": "Chain Taste",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Books
+</h1>,
+        <input
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="submit"
+          value="Add Book"
+/>,
+        <ItemList
+          fieldsDefinition={
+                    Object {
+                              "author": Object {},
+                              "category": Object {
+                                "type": "number",
+                              },
+                              "name": Object {},
+                              "page": Object {
+                                "type": "number",
+                              },
+                            }
+          }
+          listItems={Array []}
+/>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Books",
+        },
+        "ref": null,
+        "rendered": "Books",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "btn btn-primary",
+          "onClick": [Function],
+          "type": "submit",
+          "value": "Add Book",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fieldsDefinition": Object {
+            "author": Object {},
+            "category": Object {
+              "type": "number",
+            },
+            "name": Object {},
+            "page": Object {
+              "type": "number",
+            },
+          },
+          "listItems": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Books
+</h1>,
+          <input
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="submit"
+            value="Add Book"
+/>,
+          <ItemList
+            fieldsDefinition={
+                        Object {
+                                    "author": Object {},
+                                    "category": Object {
+                                      "type": "number",
+                                    },
+                                    "name": Object {},
+                                    "page": Object {
+                                      "type": "number",
+                                    },
+                                  }
+            }
+            listItems={Array []}
+/>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Books",
+          },
+          "ref": null,
+          "rendered": "Books",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "btn btn-primary",
+            "onClick": [Function],
+            "type": "submit",
+            "value": "Add Book",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fieldsDefinition": Object {
+              "author": Object {},
+              "category": Object {
+                "type": "number",
+              },
+              "name": Object {},
+              "page": Object {
+                "type": "number",
+              },
+            },
+            "listItems": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render BooksPage with non empty books 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BooksPage
+    actions={
+        Object {
+            "loadBooks": [Function],
+          }
+    }
+    books={
+        Array [
+            Object {
+              "author": "Russia Ban",
+              "category": 3,
+              "id": 1,
+              "name": "The Syberia Story",
+              "page": 456,
+            },
+            Object {
+              "author": "Pact Sun",
+              "category": 1,
+              "id": 2,
+              "name": "The Wolf Report",
+              "page": 375,
+            },
+            Object {
+              "author": "Brian Tracy",
+              "category": 5,
+              "id": 3,
+              "name": "The Mayor of 3rd",
+              "page": 590,
+            },
+          ]
+    }
+    genres={
+        Array [
+            Object {
+              "description": "That is an example",
+              "id": 1,
+              "name": "Rare Screen",
+            },
+            Object {
+              "description": "5 The rate",
+              "id": 2,
+              "name": "Satire",
+            },
+            Object {
+              "description": "This is new",
+              "id": 3,
+              "name": "Chain Taste",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Books
+</h1>,
+        <input
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="submit"
+          value="Add Book"
+/>,
+        <ItemList
+          fieldsDefinition={
+                    Object {
+                              "author": Object {},
+                              "category": Object {
+                                "type": "number",
+                              },
+                              "name": Object {},
+                              "page": Object {
+                                "type": "number",
+                              },
+                            }
+          }
+          listItems={
+                    Array [
+                              Object {
+                                "author": "Russia Ban",
+                                "category": 3,
+                                "id": 1,
+                                "name": "The Syberia Story",
+                                "page": 456,
+                              },
+                              Object {
+                                "author": "Pact Sun",
+                                "category": 1,
+                                "id": 2,
+                                "name": "The Wolf Report",
+                                "page": 375,
+                              },
+                              Object {
+                                "author": "Brian Tracy",
+                                "category": 5,
+                                "id": 3,
+                                "name": "The Mayor of 3rd",
+                                "page": 590,
+                              },
+                            ]
+          }
+/>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Books",
+        },
+        "ref": null,
+        "rendered": "Books",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "btn btn-primary",
+          "onClick": [Function],
+          "type": "submit",
+          "value": "Add Book",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fieldsDefinition": Object {
+            "author": Object {},
+            "category": Object {
+              "type": "number",
+            },
+            "name": Object {},
+            "page": Object {
+              "type": "number",
+            },
+          },
+          "listItems": Array [
+            Object {
+              "author": "Russia Ban",
+              "category": 3,
+              "id": 1,
+              "name": "The Syberia Story",
+              "page": 456,
+            },
+            Object {
+              "author": "Pact Sun",
+              "category": 1,
+              "id": 2,
+              "name": "The Wolf Report",
+              "page": 375,
+            },
+            Object {
+              "author": "Brian Tracy",
+              "category": 5,
+              "id": 3,
+              "name": "The Mayor of 3rd",
+              "page": 590,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Books
+</h1>,
+          <input
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="submit"
+            value="Add Book"
+/>,
+          <ItemList
+            fieldsDefinition={
+                        Object {
+                                    "author": Object {},
+                                    "category": Object {
+                                      "type": "number",
+                                    },
+                                    "name": Object {},
+                                    "page": Object {
+                                      "type": "number",
+                                    },
+                                  }
+            }
+            listItems={
+                        Array [
+                                    Object {
+                                      "author": "Russia Ban",
+                                      "category": 3,
+                                      "id": 1,
+                                      "name": "The Syberia Story",
+                                      "page": 456,
+                                    },
+                                    Object {
+                                      "author": "Pact Sun",
+                                      "category": 1,
+                                      "id": 2,
+                                      "name": "The Wolf Report",
+                                      "page": 375,
+                                    },
+                                    Object {
+                                      "author": "Brian Tracy",
+                                      "category": 5,
+                                      "id": 3,
+                                      "name": "The Mayor of 3rd",
+                                      "page": 590,
+                                    },
+                                  ]
+            }
+/>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Books",
+          },
+          "ref": null,
+          "rendered": "Books",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "btn btn-primary",
+            "onClick": [Function],
+            "type": "submit",
+            "value": "Add Book",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fieldsDefinition": Object {
+              "author": Object {},
+              "category": Object {
+                "type": "number",
+              },
+              "name": Object {},
+              "page": Object {
+                "type": "number",
+              },
+            },
+            "listItems": Array [
+              Object {
+                "author": "Russia Ban",
+                "category": 3,
+                "id": 1,
+                "name": "The Syberia Story",
+                "page": 456,
+              },
+              Object {
+                "author": "Pact Sun",
+                "category": 1,
+                "id": 2,
+                "name": "The Wolf Report",
+                "page": 375,
+              },
+              Object {
+                "author": "Brian Tracy",
+                "category": 5,
+                "id": 3,
+                "name": "The Mayor of 3rd",
+                "page": 590,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
