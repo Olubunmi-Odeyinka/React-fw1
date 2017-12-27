@@ -16,12 +16,12 @@ import uuid from 'uuid';
 export class ManageBookPage extends React.Component {
 
   state = {
-    formHeader: "Manage Books",
+    formHeader: "Modify Book",
     formFieldReadOnly: false,
     urlOpeartion: '',
     listUrl:'/books',
     showSavingButton: true,
-    savingString:['saving', 'save', 'btn-success']
+    savingString:['Saving', 'Save', 'btn-success']
   };
 
     fieldsDefinition = {
@@ -94,7 +94,7 @@ export class ManageBookPage extends React.Component {
     }
 
     FormDom = ({
-                values,
+                //values,
                 errors,
                 touched,
                 isSubmitting
