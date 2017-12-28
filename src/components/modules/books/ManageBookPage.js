@@ -9,14 +9,13 @@ import * as genreActions from '../../../actions/genreActions';
 import GeneralForm from '../../common/form/GeneralForm';
 import * as operation from '../../../constants/operationTypes';
 import {genresFormattedForDropdown} from '../../common/selectors/selectors';
-// import _ from 'underscore';
 import toastr from 'toastr';
 import uuid from 'uuid';
 
 export class ManageBookPage extends React.Component {
 
   state = {
-    formHeader: "Modify Book",
+    formHeader: "Create Book",
     formFieldReadOnly: false,
     urlOpeartion: '',
     listUrl:'/books',
@@ -68,7 +67,6 @@ export class ManageBookPage extends React.Component {
             this.setState(() => ({showSavingButton : false}));
             break;
           case operation.Create_URL_String:
-            this.setState(() => ({formHeader : "Create Book"}));
             break;
           case operation.Modify_URL_String:
             this.setState(() => ({formHeader : "Modify Book"}));

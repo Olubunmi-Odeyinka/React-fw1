@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import GeneralForm from './GeneralForm';
-import * as operation from '../../../constants/operationTypes';
 
 let state, props, fieldsDefinition;
 
@@ -46,14 +45,62 @@ beforeEach(() => {
   };
 });
 
-test('Should Render the Manage Book', ()=>{
+test('Should Render the Create Book item', ()=>{
+  state.formHeader = 'Create Book';
+  props.formState = state;
   const wrapper = shallow(<GeneralForm  {...props}/>);
   expect(wrapper).toMatchSnapshot();
 });
 
-test('Should Render Manage Book Header with h1', ()=>{
+test('Should Render Create Book Header with h1', ()=>{
+  state.formHeader = 'Create Book';
+  props.formState = state;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper.find('h1').text()).toEqual('Create Book');
+});
+
+it('Create save button has labeled Save', () => {
+  state.formHeader = 'Create Book';
+  props.formState = state;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper.find('input').props().value).toBe('Save');
+});
+
+it('Create save button has labeled Saving... when Saving', () => {
+  state.formHeader = 'Create Book';
+  props.formState = state;
+  props.saving = true;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper.find('input').props().value).toBe('Saving...');
+});
+
+test('Should Render the Modify Book', ()=>{
+  state.savingString = ['Updating', 'Update', 'btn-info'];
+  props.formState = state;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('Should Render Manage Book Header with h1 in Manage Book screen', ()=>{
+  state.savingString = ['Updating', 'Update', 'btn-info'];
+  props.formState = state;
   const wrapper = shallow(<GeneralForm  {...props}/>);
   expect(wrapper.find('h1').text()).toEqual('Modify Book');
+});
+
+it('Modify save button has labeled Update', () => {
+  state.savingString = ['Updating', 'Update', 'btn-info'];
+  props.formState = state;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper.find('input').props().value).toBe('Update');
+});
+
+it('Modify save button has labeled Updating... when Updating', () => {
+  state.savingString = ['Updating', 'Update', 'btn-info'];
+  props.formState = state;
+  props.saving = true;
+  const wrapper = shallow(<GeneralForm  {...props}/>);
+  expect(wrapper.find('input').props().value).toBe('Updating...');
 });
 
 test('Should Render the View Book item', ()=>{
@@ -90,35 +137,22 @@ test('Should Render Delete Book Header with h1', ()=>{
   expect(wrapper.find('h1').text()).toEqual('Delete Book');
 });
 
-test('Should Render the Create Book item', ()=>{
-  state.formHeader = 'Create Book';
+it('Delete save button has labeled Save', () => {
+  state.formHeader = 'Delete Book';
+  state.formFieldReadOnly = true;
+  state.savingString = ['Deleting', 'Delete', 'btn-danger'];
   props.formState = state;
   const wrapper = shallow(<GeneralForm  {...props}/>);
-  expect(wrapper).toMatchSnapshot();
+  expect(wrapper.find('input').props().value).toBe('Delete');
 });
 
-test('Should Render Create Book Header with h1', ()=>{
-  state.formHeader = 'Create Book';
+it('Delete button has labeled Deleting... when Deleting', () => {
+  state.formHeader = 'Delete Book';
+  state.formFieldReadOnly = true;
+  state.savingString = ['Deleting', 'Delete', 'btn-danger'];
   props.formState = state;
+  props.saving = true;
   const wrapper = shallow(<GeneralForm  {...props}/>);
-  expect(wrapper.find('h1').text()).toEqual('Create Book');
+  expect(wrapper.find('input').props().value).toBe('Deleting...');
 });
 
-// it('save button is labeled "Save" when not saving', () => {
-//   state.formHeader = 'Create Book';
-//   props.formState = state;
-//   const submitButton = output.props.children[5];
-//   expect(submitButton.props.value).toBe('Save');
-// });
-
-// it('save button is labeled "Save" when not saving', () => {
-//   const { output } = setup(false);
-//   const submitButton = output.props.children[5];
-//   expect(submitButton.props.value).toBe('Save');
-// });
-//
-// it('save button is labeled "Saving..." when saving', () => {
-//   const { output } = setup(true);
-//   const submitButton = output.props.children[5];
-//   expect(submitButton.props.value).toBe('Saving...');
-// });

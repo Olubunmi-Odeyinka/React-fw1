@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Field} from 'formik';
+import {Field} from 'formik';
 
 const SelectInput = ({name, label, touched, error, options, focus, readOnly}) => {
   return (
@@ -26,14 +26,14 @@ const SelectInput = ({name, label, touched, error, options, focus, readOnly}) =>
   );
 };
 
-// SelectInput.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   label: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-//   defaultOption: PropTypes.string,
-//   //value: PropTypes.string || PropTypes.number,
-//   error: PropTypes.string,
-//   options: PropTypes.arrayOf(PropTypes.object)
-// };
+SelectInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  touched: PropTypes.bool,
+  error: PropTypes.string,
+  options: PropTypes.array,
+  focus: PropTypes.bool,
+  readOnly: PropTypes.bool
+};
 
 export default SelectInput;

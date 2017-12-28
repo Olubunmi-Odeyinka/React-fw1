@@ -1,20 +1,28 @@
-import expect from 'expect';
-import {authorsFormattedForDropdown} from './selectors';
+import {genresFormattedForDropdown} from './selectors';
 
-describe('Author Selectors', () => {
-  describe('authorsFormattedForDropdown', () => {
+
+describe('Genres Selectors', () => {
+  describe('genresFormattedForDropdown', () => {
     it('should return author data formatted for use in a dropdown', () => {
-      const authors = [
-        {id: 'cory-house', firstName: 'Cory', lastName: 'House'},
-        {id: 'scott-allen',firstName: 'Scott',lastName: 'Allen'}
+      const genres = [
+        {
+          id: 2,
+          name: 'Satire',
+          description: '5 The rate'
+        },
+        {
+          id: 3,
+          name: 'Chain Taste',
+          description: 'This is new'
+        }
       ];
 
       const expected = [
-        {value: 'cory-house', text: 'Cory House'},
-        {value: 'scott-allen', text: 'Scott Allen'}
+        {value: 2, text: 'Satire'},
+        {value: 3, text: 'Chain Taste'}
       ];
 
-      expect(authorsFormattedForDropdown(authors)).toEqual(expected);
+      expect(genresFormattedForDropdown(genres)).toEqual(expected);
     });
   });
 });

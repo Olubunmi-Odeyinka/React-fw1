@@ -25,13 +25,13 @@ const TextInput = ({name, label, placeholder, touched, error, type, focus, readO
   );
 };
 
-// TextInput.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   label: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-//   placeholder: PropTypes.string,
-//   //value: PropTypes.string || PropTypes.number,
-//   error: PropTypes.string
-// };
+TextInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  touched: PropTypes.bool,
+  error: PropTypes.string,
+  focus: PropTypes.bool,
+  readOnly: PropTypes.bool
+};
 
 export default TextInput;

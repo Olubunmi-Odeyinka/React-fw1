@@ -1194,7 +1194,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Should Render the Manage Book 1`] = `
+exports[`Should Render the Modify Book 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -1227,9 +1227,9 @@ ShallowWrapper {
             "formHeader": "Modify Book",
             "listUrl": "/books",
             "savingString": Array [
-              "Saving",
-              "Save",
-              "btn-success",
+              "Updating",
+              "Update",
+              "btn-info",
             ],
             "showSavingButton": true,
             "urlOpeartion": "",
@@ -1306,11 +1306,11 @@ ShallowWrapper {
                     type="number"
           />
           <input
-                    className="btn btn-success"
+                    className="btn btn-info"
                     disabled={false}
                     onClick={true}
                     type="submit"
-                    value="Save"
+                    value="Update"
           />
 </Form>,
       ],
@@ -1414,11 +1414,11 @@ ShallowWrapper {
 />,
             ],
             <input
-              className="btn btn-success"
+              className="btn btn-info"
               disabled={false}
               onClick={true}
               type="submit"
-              value="Save"
+              value="Update"
 />,
           ],
         },
@@ -1497,11 +1497,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "btn btn-success",
+              "className": "btn btn-info",
               "disabled": false,
               "onClick": true,
               "type": "submit",
-              "value": "Save",
+              "value": "Update",
             },
             "ref": null,
             "rendered": null,
@@ -1573,11 +1573,11 @@ ShallowWrapper {
                         type="number"
             />
             <input
-                        className="btn btn-success"
+                        className="btn btn-info"
                         disabled={false}
                         onClick={true}
                         type="submit"
-                        value="Save"
+                        value="Update"
             />
 </Form>,
         ],
@@ -1681,11 +1681,11 @@ ShallowWrapper {
 />,
               ],
               <input
-                className="btn btn-success"
+                className="btn btn-info"
                 disabled={false}
                 onClick={true}
                 type="submit"
-                value="Save"
+                value="Update"
 />,
             ],
           },
@@ -1764,11 +1764,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "btn btn-success",
+                "className": "btn btn-info",
                 "disabled": false,
                 "onClick": true,
                 "type": "submit",
-                "value": "Save",
+                "value": "Update",
               },
               "ref": null,
               "rendered": null,

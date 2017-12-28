@@ -9,10 +9,7 @@ import { connect } from 'react-redux';
 //import LoadingDots from './LoadingDots';
 
 
-class Header extends React.Component {
-  //debugger;
-
-  render() {
+export const Header = () => {
     return (
 
       <div>
@@ -77,8 +74,8 @@ class Header extends React.Component {
         <Loading show={true} color="green" showSpinner={true}/>
       </div>
     );
-  }
-}
+};
+
 // Header.propTypes = {
 //   loading: PropTypes.bool.isRequired
 // };
