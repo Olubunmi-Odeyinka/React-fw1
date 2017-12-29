@@ -1,0 +1,837 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render list view properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ItemList
+    fieldsDefinition={
+        Object {
+            "author": Object {},
+            "category": Object {
+              "type": "number",
+            },
+            "name": Object {},
+            "page": Object {
+              "type": "number",
+            },
+          }
+    }
+    listItems={
+        Array [
+            Object {
+              "author": "Russia Ban",
+              "category": 3,
+              "id": 1,
+              "name": "The Syberia Story",
+              "page": 456,
+            },
+            Object {
+              "author": "Pact Sun",
+              "category": 1,
+              "id": 2,
+              "name": "The Wolf Report",
+              "page": 375,
+            },
+            Object {
+              "author": "Brian Tracy",
+              "category": 5,
+              "id": 3,
+              "name": "The Mayor of 3rd",
+              "page": 590,
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <thead>
+          <tr>
+                    <th>
+                               
+                    </th>
+                    <th>
+                              NAME
+                    </th>
+                    <th>
+                              AUTHOR
+                    </th>
+                    <th>
+                              PAGE
+                    </th>
+                    <th>
+                              CATEGORY
+                    </th>
+          </tr>
+</thead>,
+        <tbody>
+          <CourseListRow
+                    fieldsDefinition={
+                              Object {
+                                        "author": Object {},
+                                        "category": Object {
+                                          "type": "number",
+                                        },
+                                        "name": Object {},
+                                        "page": Object {
+                                          "type": "number",
+                                        },
+                                      }
+                    }
+                    item={
+                              Object {
+                                        "author": "Russia Ban",
+                                        "category": 3,
+                                        "id": 1,
+                                        "name": "The Syberia Story",
+                                        "page": 456,
+                                      }
+                    }
+                    itemUrl={undefined}
+          />
+          <CourseListRow
+                    fieldsDefinition={
+                              Object {
+                                        "author": Object {},
+                                        "category": Object {
+                                          "type": "number",
+                                        },
+                                        "name": Object {},
+                                        "page": Object {
+                                          "type": "number",
+                                        },
+                                      }
+                    }
+                    item={
+                              Object {
+                                        "author": "Pact Sun",
+                                        "category": 1,
+                                        "id": 2,
+                                        "name": "The Wolf Report",
+                                        "page": 375,
+                                      }
+                    }
+                    itemUrl={undefined}
+          />
+          <CourseListRow
+                    fieldsDefinition={
+                              Object {
+                                        "author": Object {},
+                                        "category": Object {
+                                          "type": "number",
+                                        },
+                                        "name": Object {},
+                                        "page": Object {
+                                          "type": "number",
+                                        },
+                                      }
+                    }
+                    item={
+                              Object {
+                                        "author": "Brian Tracy",
+                                        "category": 5,
+                                        "id": 3,
+                                        "name": "The Mayor of 3rd",
+                                        "page": 590,
+                                      }
+                    }
+                    itemUrl={undefined}
+          />
+</tbody>,
+      ],
+      "className": "table",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <tr>
+            <th>
+                         
+            </th>
+            <th>
+                        NAME
+            </th>
+            <th>
+                        AUTHOR
+            </th>
+            <th>
+                        PAGE
+            </th>
+            <th>
+                        CATEGORY
+            </th>
+</tr>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <th>
+                 
+</th>,
+              Array [
+                <th>
+                  NAME
+</th>,
+                <th>
+                  AUTHOR
+</th>,
+                <th>
+                  PAGE
+</th>,
+                <th>
+                  CATEGORY
+</th>,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " ",
+              },
+              "ref": null,
+              "rendered": " ",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": "name",
+              "nodeType": "host",
+              "props": Object {
+                "children": "NAME",
+              },
+              "ref": null,
+              "rendered": "NAME",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": "author",
+              "nodeType": "host",
+              "props": Object {
+                "children": "AUTHOR",
+              },
+              "ref": null,
+              "rendered": "AUTHOR",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": "page",
+              "nodeType": "host",
+              "props": Object {
+                "children": "PAGE",
+              },
+              "ref": null,
+              "rendered": "PAGE",
+              "type": "th",
+            },
+            Object {
+              "instance": null,
+              "key": "category",
+              "nodeType": "host",
+              "props": Object {
+                "children": "CATEGORY",
+              },
+              "ref": null,
+              "rendered": "CATEGORY",
+              "type": "th",
+            },
+          ],
+          "type": "tr",
+        },
+        "type": "thead",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <CourseListRow
+              fieldsDefinition={
+                            Object {
+                                          "author": Object {},
+                                          "category": Object {
+                                            "type": "number",
+                                          },
+                                          "name": Object {},
+                                          "page": Object {
+                                            "type": "number",
+                                          },
+                                        }
+              }
+              item={
+                            Object {
+                                          "author": "Russia Ban",
+                                          "category": 3,
+                                          "id": 1,
+                                          "name": "The Syberia Story",
+                                          "page": 456,
+                                        }
+              }
+              itemUrl={undefined}
+/>,
+            <CourseListRow
+              fieldsDefinition={
+                            Object {
+                                          "author": Object {},
+                                          "category": Object {
+                                            "type": "number",
+                                          },
+                                          "name": Object {},
+                                          "page": Object {
+                                            "type": "number",
+                                          },
+                                        }
+              }
+              item={
+                            Object {
+                                          "author": "Pact Sun",
+                                          "category": 1,
+                                          "id": 2,
+                                          "name": "The Wolf Report",
+                                          "page": 375,
+                                        }
+              }
+              itemUrl={undefined}
+/>,
+            <CourseListRow
+              fieldsDefinition={
+                            Object {
+                                          "author": Object {},
+                                          "category": Object {
+                                            "type": "number",
+                                          },
+                                          "name": Object {},
+                                          "page": Object {
+                                            "type": "number",
+                                          },
+                                        }
+              }
+              item={
+                            Object {
+                                          "author": "Brian Tracy",
+                                          "category": 5,
+                                          "id": 3,
+                                          "name": "The Mayor of 3rd",
+                                          "page": 590,
+                                        }
+              }
+              itemUrl={undefined}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "fieldsDefinition": Object {
+                "author": Object {},
+                "category": Object {
+                  "type": "number",
+                },
+                "name": Object {},
+                "page": Object {
+                  "type": "number",
+                },
+              },
+              "item": Object {
+                "author": "Russia Ban",
+                "category": 3,
+                "id": 1,
+                "name": "The Syberia Story",
+                "page": 456,
+              },
+              "itemUrl": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "fieldsDefinition": Object {
+                "author": Object {},
+                "category": Object {
+                  "type": "number",
+                },
+                "name": Object {},
+                "page": Object {
+                  "type": "number",
+                },
+              },
+              "item": Object {
+                "author": "Pact Sun",
+                "category": 1,
+                "id": 2,
+                "name": "The Wolf Report",
+                "page": 375,
+              },
+              "itemUrl": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "function",
+            "props": Object {
+              "fieldsDefinition": Object {
+                "author": Object {},
+                "category": Object {
+                  "type": "number",
+                },
+                "name": Object {},
+                "page": Object {
+                  "type": "number",
+                },
+              },
+              "item": Object {
+                "author": "Brian Tracy",
+                "category": 5,
+                "id": 3,
+                "name": "The Mayor of 3rd",
+                "page": 590,
+              },
+              "itemUrl": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "tbody",
+      },
+    ],
+    "type": "table",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <thead>
+            <tr>
+                        <th>
+                                     
+                        </th>
+                        <th>
+                                    NAME
+                        </th>
+                        <th>
+                                    AUTHOR
+                        </th>
+                        <th>
+                                    PAGE
+                        </th>
+                        <th>
+                                    CATEGORY
+                        </th>
+            </tr>
+</thead>,
+          <tbody>
+            <CourseListRow
+                        fieldsDefinition={
+                                    Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                        }
+                        item={
+                                    Object {
+                                                "author": "Russia Ban",
+                                                "category": 3,
+                                                "id": 1,
+                                                "name": "The Syberia Story",
+                                                "page": 456,
+                                              }
+                        }
+                        itemUrl={undefined}
+            />
+            <CourseListRow
+                        fieldsDefinition={
+                                    Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                        }
+                        item={
+                                    Object {
+                                                "author": "Pact Sun",
+                                                "category": 1,
+                                                "id": 2,
+                                                "name": "The Wolf Report",
+                                                "page": 375,
+                                              }
+                        }
+                        itemUrl={undefined}
+            />
+            <CourseListRow
+                        fieldsDefinition={
+                                    Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                        }
+                        item={
+                                    Object {
+                                                "author": "Brian Tracy",
+                                                "category": 5,
+                                                "id": 3,
+                                                "name": "The Mayor of 3rd",
+                                                "page": 590,
+                                              }
+                        }
+                        itemUrl={undefined}
+            />
+</tbody>,
+        ],
+        "className": "table",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <tr>
+              <th>
+                             
+              </th>
+              <th>
+                            NAME
+              </th>
+              <th>
+                            AUTHOR
+              </th>
+              <th>
+                            PAGE
+              </th>
+              <th>
+                            CATEGORY
+              </th>
+</tr>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <th>
+                   
+</th>,
+                Array [
+                  <th>
+                    NAME
+</th>,
+                  <th>
+                    AUTHOR
+</th>,
+                  <th>
+                    PAGE
+</th>,
+                  <th>
+                    CATEGORY
+</th>,
+                ],
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " ",
+                },
+                "ref": null,
+                "rendered": " ",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": "name",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NAME",
+                },
+                "ref": null,
+                "rendered": "NAME",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": "author",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "AUTHOR",
+                },
+                "ref": null,
+                "rendered": "AUTHOR",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": "page",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "PAGE",
+                },
+                "ref": null,
+                "rendered": "PAGE",
+                "type": "th",
+              },
+              Object {
+                "instance": null,
+                "key": "category",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "CATEGORY",
+                },
+                "ref": null,
+                "rendered": "CATEGORY",
+                "type": "th",
+              },
+            ],
+            "type": "tr",
+          },
+          "type": "thead",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <CourseListRow
+                fieldsDefinition={
+                                Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                }
+                item={
+                                Object {
+                                                "author": "Russia Ban",
+                                                "category": 3,
+                                                "id": 1,
+                                                "name": "The Syberia Story",
+                                                "page": 456,
+                                              }
+                }
+                itemUrl={undefined}
+/>,
+              <CourseListRow
+                fieldsDefinition={
+                                Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                }
+                item={
+                                Object {
+                                                "author": "Pact Sun",
+                                                "category": 1,
+                                                "id": 2,
+                                                "name": "The Wolf Report",
+                                                "page": 375,
+                                              }
+                }
+                itemUrl={undefined}
+/>,
+              <CourseListRow
+                fieldsDefinition={
+                                Object {
+                                                "author": Object {},
+                                                "category": Object {
+                                                  "type": "number",
+                                                },
+                                                "name": Object {},
+                                                "page": Object {
+                                                  "type": "number",
+                                                },
+                                              }
+                }
+                item={
+                                Object {
+                                                "author": "Brian Tracy",
+                                                "category": 5,
+                                                "id": 3,
+                                                "name": "The Mayor of 3rd",
+                                                "page": 590,
+                                              }
+                }
+                itemUrl={undefined}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "fieldsDefinition": Object {
+                  "author": Object {},
+                  "category": Object {
+                    "type": "number",
+                  },
+                  "name": Object {},
+                  "page": Object {
+                    "type": "number",
+                  },
+                },
+                "item": Object {
+                  "author": "Russia Ban",
+                  "category": 3,
+                  "id": 1,
+                  "name": "The Syberia Story",
+                  "page": 456,
+                },
+                "itemUrl": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "function",
+              "props": Object {
+                "fieldsDefinition": Object {
+                  "author": Object {},
+                  "category": Object {
+                    "type": "number",
+                  },
+                  "name": Object {},
+                  "page": Object {
+                    "type": "number",
+                  },
+                },
+                "item": Object {
+                  "author": "Pact Sun",
+                  "category": 1,
+                  "id": 2,
+                  "name": "The Wolf Report",
+                  "page": 375,
+                },
+                "itemUrl": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "function",
+              "props": Object {
+                "fieldsDefinition": Object {
+                  "author": Object {},
+                  "category": Object {
+                    "type": "number",
+                  },
+                  "name": Object {},
+                  "page": Object {
+                    "type": "number",
+                  },
+                },
+                "item": Object {
+                  "author": "Brian Tracy",
+                  "category": 5,
+                  "id": 3,
+                  "name": "The Mayor of 3rd",
+                  "page": 590,
+                },
+                "itemUrl": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "tbody",
+        },
+      ],
+      "type": "table",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

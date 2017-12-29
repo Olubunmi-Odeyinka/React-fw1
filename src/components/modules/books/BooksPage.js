@@ -7,6 +7,10 @@ import ListView from "../../common/table/ListView";
 
 export class BooksPage extends React.Component {
 
+  state = {
+    itemUrl:'/book'
+  };
+
    fieldsDefinition = {
       name: {
       },
@@ -42,7 +46,7 @@ export class BooksPage extends React.Component {
                value="Add Book"
                className="btn btn-primary"
                onClick={this.redirectToAddBookPage}/>
-        <ListView listItems={books} fieldsDefinition={this.fieldsDefinition}/>
+        <ListView listItems={books} fieldsDefinition={this.fieldsDefinition} itemUrl={this.state.itemUrl}/>
       </div>
     );
   }

@@ -30,6 +30,7 @@ ShallowWrapper {
             },
           ]
     }
+    itemUrl=""
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -66,6 +67,7 @@ ShallowWrapper {
                               },
                             }
           }
+          itemUrl="/book"
           listItems={Array []}
 />,
       ],
@@ -113,6 +115,7 @@ ShallowWrapper {
               "type": "number",
             },
           },
+          "itemUrl": "/book",
           "listItems": Array [],
         },
         "ref": null,
@@ -151,6 +154,7 @@ ShallowWrapper {
                                     },
                                   }
             }
+            itemUrl="/book"
             listItems={Array []}
 />,
         ],
@@ -198,6 +202,7 @@ ShallowWrapper {
                 "type": "number",
               },
             },
+            "itemUrl": "/book",
             "listItems": Array [],
           },
           "ref": null,
@@ -272,6 +277,7 @@ ShallowWrapper {
             },
           ]
     }
+    itemUrl=""
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -308,6 +314,7 @@ ShallowWrapper {
                               },
                             }
           }
+          itemUrl="/book"
           listItems={
                     Array [
                               Object {
@@ -379,6 +386,7 @@ ShallowWrapper {
               "type": "number",
             },
           },
+          "itemUrl": "/book",
           "listItems": Array [
             Object {
               "author": "Russia Ban",
@@ -439,6 +447,7 @@ ShallowWrapper {
                                     },
                                   }
             }
+            itemUrl="/book"
             listItems={
                         Array [
                                     Object {
@@ -510,6 +519,7 @@ ShallowWrapper {
                 "type": "number",
               },
             },
+            "itemUrl": "/book",
             "listItems": Array [
               Object {
                 "author": "Russia Ban",

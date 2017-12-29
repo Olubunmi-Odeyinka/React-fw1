@@ -4,7 +4,7 @@ import _ from 'underscore';
 import ListViewRow from './ListViewRow';
 
 
-const ItemList = ({listItems, fieldsDefinition}) => {
+const ItemList = ({listItems, fieldsDefinition, itemUrl}) => {
   return (
       <table className="table">
         <thead>
@@ -17,7 +17,7 @@ const ItemList = ({listItems, fieldsDefinition}) => {
         <tbody>
 
         {listItems.map(item =>
-          <ListViewRow key={item.id} item={item} fieldsDefinition={fieldsDefinition} />
+          <ListViewRow key={item.id} item={item} itemUrl={itemUrl} fieldsDefinition={fieldsDefinition} />
         )}
         </tbody>
       </table>

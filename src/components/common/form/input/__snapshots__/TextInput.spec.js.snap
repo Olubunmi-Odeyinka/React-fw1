@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The text input component input component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TextInput
+    error=""
+    focus={true}
+    label="Description"
+    name="Description"
+    readOnly={false}
+    touched={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label
+          htmlFor="Description"
+>
+          Description
+</label>,
+        <div
+          className="field"
+>
+          <Field
+                    autoFocus={true}
+                    className="form-control"
+                    name="Description"
+                    placeholder={undefined}
+                    readOnly={false}
+                    type={undefined}
+          />
+</div>,
+      ],
+      "className": "form-group",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Description",
+          "htmlFor": "Description",
+        },
+        "ref": null,
+        "rendered": "Description",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Field
+              autoFocus={true}
+              className="form-control"
+              name="Description"
+              placeholder={undefined}
+              readOnly={false}
+              type={undefined}
+/>,
+            false,
+          ],
+          "className": "field",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "autoFocus": true,
+              "className": "form-control",
+              "name": "Description",
+              "placeholder": undefined,
+              "readOnly": false,
+              "type": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          false,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            htmlFor="Description"
+>
+            Description
+</label>,
+          <div
+            className="field"
+>
+            <Field
+                        autoFocus={true}
+                        className="form-control"
+                        name="Description"
+                        placeholder={undefined}
+                        readOnly={false}
+                        type={undefined}
+            />
+</div>,
+        ],
+        "className": "form-group",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Description",
+            "htmlFor": "Description",
+          },
+          "ref": null,
+          "rendered": "Description",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Field
+                autoFocus={true}
+                className="form-control"
+                name="Description"
+                placeholder={undefined}
+                readOnly={false}
+                type={undefined}
+/>,
+              false,
+            ],
+            "className": "field",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "autoFocus": true,
+                "className": "form-control",
+                "name": "Description",
+                "placeholder": undefined,
+                "readOnly": false,
+                "type": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
