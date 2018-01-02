@@ -33,3 +33,5 @@ if (module.hot) {
     );
   });
 }
+
+//Todo: load the toke from offline storage to the store

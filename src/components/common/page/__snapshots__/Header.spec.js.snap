@@ -91,6 +91,11 @@ ShallowWrapper {
                                                             Book
                                                   </NavLink>
                                         </li>
+                                        <button
+                                                  onClick={undefined}
+                                        >
+                                                  Logout
+                                        </button>
                                         <li
                                                   className="dropdown"
                                         >
@@ -327,6 +332,11 @@ ShallowWrapper {
                                                             Book
                                                 </NavLink>
                                     </li>
+                                    <button
+                                                onClick={undefined}
+                                    >
+                                                Logout
+                                    </button>
                                     <li
                                                 className="dropdown"
                                     >
@@ -553,6 +563,11 @@ ShallowWrapper {
                                                                 Book
                                                 </NavLink>
                                 </li>
+                                <button
+                                                onClick={undefined}
+                                >
+                                                Logout
+                                </button>
                                 <li
                                                 className="dropdown"
                                 >
@@ -876,6 +891,11 @@ ShallowWrapper {
                                                             Book
                                         </NavLink>
                     </li>
+                    <button
+                                        onClick={undefined}
+                    >
+                                        Logout
+                    </button>
                     <li
                                         className="dropdown"
                     >
@@ -1064,6 +1084,11 @@ ShallowWrapper {
                                                 Book
                         </NavLink>
 </li>,
+                      <button
+                        onClick={undefined}
+>
+                        Logout
+</button>,
                       <li
                         className="dropdown"
 >
@@ -1224,6 +1249,18 @@ ShallowWrapper {
                         "type": [Function],
                       },
                       "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Logout",
+                        "onClick": undefined,
+                      },
+                      "ref": null,
+                      "rendered": "Logout",
+                      "type": "button",
                     },
                     Object {
                       "instance": null,
@@ -2083,6 +2120,11 @@ ShallowWrapper {
                                                                         Book
                                                             </NavLink>
                                                 </li>
+                                                <button
+                                                            onClick={undefined}
+                                                >
+                                                            Logout
+                                                </button>
                                                 <li
                                                             className="dropdown"
                                                 >
@@ -2319,6 +2361,11 @@ ShallowWrapper {
                                                                       Book
                                                         </NavLink>
                                           </li>
+                                          <button
+                                                        onClick={undefined}
+                                          >
+                                                        Logout
+                                          </button>
                                           <li
                                                         className="dropdown"
                                           >
@@ -2545,6 +2592,11 @@ ShallowWrapper {
                                                                         Book
                                                       </NavLink>
                                     </li>
+                                    <button
+                                                      onClick={undefined}
+                                    >
+                                                      Logout
+                                    </button>
                                     <li
                                                       className="dropdown"
                                     >
@@ -2868,6 +2920,11 @@ ShallowWrapper {
                                                                   Book
                                             </NavLink>
                       </li>
+                      <button
+                                            onClick={undefined}
+                      >
+                                            Logout
+                      </button>
                       <li
                                             className="dropdown"
                       >
@@ -3056,6 +3113,11 @@ ShallowWrapper {
                                                     Book
                           </NavLink>
 </li>,
+                        <button
+                          onClick={undefined}
+>
+                          Logout
+</button>,
                         <li
                           className="dropdown"
 >
@@ -3216,6 +3278,18 @@ ShallowWrapper {
                           "type": [Function],
                         },
                         "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Logout",
+                          "onClick": undefined,
+                        },
+                        "ref": null,
+                        "rendered": "Logout",
+                        "type": "button",
                       },
                       Object {
                         "instance": null,

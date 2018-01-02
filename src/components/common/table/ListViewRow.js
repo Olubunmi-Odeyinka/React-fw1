@@ -9,9 +9,9 @@ const CourseListRow = ({item, fieldsDefinition, itemUrl}) => {
   return (
     <tr>
       <td>
-        <NavLink  to={`/${itemUrl}/${operation.View_URL_String}/${item.id}`}><span className="text-success glyphicon glyphicon-file"></span></NavLink>|
-        <NavLink  to={`/${itemUrl}/${operation.Modify_URL_String}/${item.id}`}><span className="text-warning glyphicon glyphicon-edit"></span></NavLink>|
-        <NavLink  to={`/${itemUrl}/${operation.Delete_URL_String}/${item.id}`}><span className="text-danger glyphicon glyphicon-trash"></span></NavLink>
+        <NavLink  to={`${itemUrl}/${operation.View_URL_String}/${item.id}`}><span className="text-success glyphicon glyphicon-file"></span></NavLink>|
+        <NavLink  to={`${itemUrl}/${operation.Modify_URL_String}/${item.id}`}><span className="text-warning glyphicon glyphicon-edit"></span></NavLink>|
+        <NavLink  to={`${itemUrl}/${operation.Delete_URL_String}/${item.id}`}><span className="text-danger glyphicon glyphicon-trash"></span></NavLink>
       </td>
       {_.map(fieldsDefinition, (val, key)=> <td key={item[key]}>{item[key]}</td> )}
     </tr>

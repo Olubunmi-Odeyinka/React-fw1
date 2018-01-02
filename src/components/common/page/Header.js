@@ -6,10 +6,11 @@ import 'react-loading-bar/dist/index.css';
 //import { Link, IndexLink } from 'react-router';
 import { NavLink} from 'react-router-dom';
 import { connect } from 'react-redux';
+import {logout} from '../../../actions/authActions'
 //import LoadingDots from './LoadingDots';
 
 
-export const Header = () => {
+export const Header = ({logout}) => {
     return (
 
       <div>
@@ -31,6 +32,7 @@ export const Header = () => {
                 <li><NavLink activeClassName='' exact to="/">Home</NavLink></li>
                 <li><NavLink activeClassName='' to="/next">Next</NavLink></li>
                 <li><NavLink activeClassName='' to="/books">Book</NavLink></li>
+                <button onClick={logout}>Logout</button>
                 {/*<NavItem to="/" exact={true}>Home</NavItem>*/}
                 {/*<NavItem to="/next">Link</NavItem>*/}
 
@@ -80,10 +82,14 @@ export const Header = () => {
 //   loading: PropTypes.bool.isRequired
 // };
 
-function mapStateToProps(state) {
+const mapDispatchToProps = (dispatch) => ({
+  logout: () => dispatch(logout())
+});
+
+const mapStateToProps =(state) => {
   return{
     loading: state.ajaxCallsInProgress > 0
   };
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

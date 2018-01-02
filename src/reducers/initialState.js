@@ -2,5 +2,6 @@ export default {
   book:{},
   books: [],
   genres: [],
-  ajaxCallsInProgress: 1
+  ajaxCallsInProgress: 1,
+  token: {}
 };
